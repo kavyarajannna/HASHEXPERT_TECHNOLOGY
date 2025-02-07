@@ -21,8 +21,8 @@
 
     }
 
-   /* Header Styles */
-   header {
+    /* Header Styles */
+    header {
         background-color: white;
         color: #000;
         padding: 15px 20px;
@@ -121,7 +121,7 @@
             display: flex;
         }
     }
-    
+
 
     /* Map Box */
     .map {
@@ -468,163 +468,163 @@
         }
     }
 
-  /* Hero Section Styles */
-  .hero {
-            background: url('infra.jpg') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            padding: 0 105px;
-            text-align: left;
-            background-size: cover;
-            /* Ensures the image covers the entire container */
-            background-position: center center;
-            /* Keeps the image centered */
-            background-attachment: fixed;
-            /* Keeps the background fixed while scrolling (optional) */
-        }
+    /* Hero Section Styles */
+    .hero {
+        background: url('infra.jpg') no-repeat center center/cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding: 0 105px;
+        text-align: left;
+        background-size: cover;
+        /* Ensures the image covers the entire container */
+        background-position: center center;
+        /* Keeps the image centered */
+        background-attachment: fixed;
+        /* Keeps the background fixed while scrolling (optional) */
+    }
 
-        /* Scoped Styles for .section8951 */
-        .section8951 {
-            padding: 0 5%;
-            /* Left and Right padding */
-        }
+    /* Scoped Styles for .section8951 */
+    .section8951 {
+        padding: 0 5%;
+        /* Left and Right padding */
+    }
 
-        .section8951 .header {
-            font-size: 2.285rem;
-            font-weight: 600;
-            line-height: 1.2;
-            text-align: left;
-            margin-top: 2rem;
-        }
+    .section8951 .header {
+        font-size: 2.285rem;
+        font-weight: 600;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: 2rem;
+    }
 
-        .section8951 .row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px;
-            gap: 20px;
-            /* Creates space between columns */
-            flex-wrap: wrap;
-        }
+    .section8951 .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        gap: 20px;
+        /* Creates space between columns */
+        flex-wrap: wrap;
+    }
 
+    .section8951 .column1 {
+        width: 50%;
+    }
+
+    .section8951 .column2,
+    .section8951 .column3 {
+        width: 22%;
+    }
+
+    .section8951 .column1 h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        margin-top: 5rem;
+        font-weight: 600;
+    }
+
+    .section8951 .column1 p {
+        font-size: 1.2857rem;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .section8951 .column1 hr {
+        border: 1px solid #30B700;
+        margin: 10px 0;
+    }
+
+    .section8951 .column2 img,
+    .section8951 .column3 img {
+        margin-top: 5rem;
+        width: 100%;
+        height: 3rem;
+        object-fit: contain;
+        /* Ensures full visibility of the image */
+        margin-bottom: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
         .section8951 .column1 {
-            width: 50%;
+            width: 100%;
         }
 
         .section8951 .column2,
         .section8951 .column3 {
-            width: 22%;
+            width: 48%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .section8951 .row {
+            flex-direction: column;
+            align-items: center;
         }
 
-        .section8951 .column1 h1 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            margin-top: 5rem;
-            font-weight: 600;
-        }
-
-        .section8951 .column1 p {
-            font-size: 1.2857rem;
-            color: #555;
-            margin-bottom: 10px;
-        }
-
-        .section8951 .column1 hr {
-            border: 1px solid #30B700;
-            margin: 10px 0;
-        }
-
-        .section8951 .column2 img,
-        .section8951 .column3 img {
-            margin-top: 5rem;
+        .section8951 .column1,
+        .section8951 .column2,
+        .section8951 .column3 {
             width: 100%;
-            height: 3rem;
-            object-fit: contain;
-            /* Ensures full visibility of the image */
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
+    }
 
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .section8951 .column1 {
-                width: 100%;
-            }
+    .hero-content h1 {
+        color: #f5f7fa;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 0;
+        opacity: 0;
+        /* Initially hidden */
+        transform: translateX(-50px);
+        /* Start position for animation */
+        animation: textReveal 1.5s ease-out forwards;
+        /* Trigger animation */
+    }
 
-            .section8951 .column2,
-            .section8951 .column3 {
-                width: 48%;
-            }
+    @keyframes textReveal {
+        to {
+            opacity: 1;
+            transform: translateX(0);
+            /* End position */
         }
+    }
 
-        @media (max-width: 768px) {
-            .section8951 .row {
-                flex-direction: column;
-                align-items: center;
-            }
+    .custom-section {
+        padding: 20px 5%;
+    }
 
-            .section8951 .column1,
-            .section8951 .column2,
-            .section8951 .column3 {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .hero {
+            padding: 0 20px;
+            /* Adjust padding for smaller screens */
+            text-align: center;
+            /* Center the text */
         }
 
         .hero-content h1 {
-            color: #f5f7fa;
-            font-size: 3rem;
-            font-weight: 600;
-            line-height: 1.2;
-            margin: 0;
-            opacity: 0;
-            /* Initially hidden */
-            transform: translateX(-50px);
-            /* Start position for animation */
-            animation: textReveal 1.5s ease-out forwards;
-            /* Trigger animation */
+            font-size: 2.5rem;
+            /* Smaller font size for small screens */
+            transform: translateX(0);
+            /* Ensure no animation offset */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero {
+            padding: 0 10px;
+            /* Further reduce padding for very small screens */
         }
 
-        @keyframes textReveal {
-            to {
-                opacity: 1;
-                transform: translateX(0);
-                /* End position */
-            }
+        .hero-content h1 {
+            font-size: 2rem;
+            /* Further adjust font size */
         }
-
-        .custom-section {
-            padding: 20px 5%;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 0 20px;
-                /* Adjust padding for smaller screens */
-                text-align: center;
-                /* Center the text */
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-                /* Smaller font size for small screens */
-                transform: translateX(0);
-                /* Ensure no animation offset */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                padding: 0 10px;
-                /* Further reduce padding for very small screens */
-            }
-
-            .hero-content h1 {
-                font-size: 2rem;
-                /* Further adjust font size */
-            }
-        }
+    }
 </style>
 
 </style>
@@ -693,7 +693,7 @@
                 <img src="Picture17.png" alt="COMMVAULT">
                 <img src="Picture19.png" alt="Nutanix">
                 <img src="Picture21.png" alt="PureStorage">
-              
+
             </div>
 
             <div class="column3">
@@ -701,7 +701,7 @@
                 <img src="Picture16.png" alt="DELLEMC">
                 <img src="14b63d857e526037e772c97b122fdbaf.png" alt="VEEAM">
                 <img src="Arcserve_logo_CMYK_reg.jpg" alt="arcserve">
-               
+
 
             </div>
         </div>
@@ -716,27 +716,29 @@
             <div class="footer-main">
                 <div class="column-left">
                     <ul class="footer-links">
-                         <li><a href="Index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Solutions.html">Services</a></li>
-            <li><a href="service1.html">Solution</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Solution</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="column-right">
                     <div class="logo-row">
-                        <img src="Picture1.png" alt="HASHEXPERT Logo" class="footer-logo">
+                        <img src="Picture1.png" alt="HASHXPERT Logo" class="footer-logo">
                     </div>
                     <div class="text-row">
                         <p>
-                            Experience and Vision of Gentlemen with vast experience in the IT industry gave birth to
-                            HashXpert Technologies LLC. Built from the ground up, HashXpert Technologies LLC is a
-                            company with a deep understanding of emerging IT industry trends. Headquartered in Dubai,
-                            covering the Middle East and India with an on-the-ground presence in UAE.We are one of the
-                            System Integrators in the UAE. We provide end-to-end IT solutions for startups and SMEs to
-                            large enterprises. We deliver custom IT solutions across multiple platforms and
-                            technologies. Our talented team of Xpert’s works with you to transform your ideas into
-                            reality.
+                            HashXpert Technologies LLC appears to be a forward-thinking IT company founded by seasoned
+                            professionals with extensive experience in the IT industry. The company is built on a strong
+                            foundation of understanding emerging trends and technologies, positioning itself as a key
+                            player in the IT sector. Headquartered in Dubai, HashXpert Technologies LLC has a strategic
+                            presence in the Middle East and India, enabling it to cater to a diverse range of clients
+                            across these regions. As a system integrator in the UAE, HashXpert Technologies LLC
+                            specializes in providing end-to-end IT solutions tailored to the needs of various
+                            businesses, from startups and SMEs to large enterprises. The company’s expertise spans
+                            multiple platforms and technologies, allowing it to deliver customized IT solutions that
+                            align with the unique requirements of its clients.
                         </p>
                     </div>
                 </div>
@@ -747,7 +749,8 @@
                 <div class="social-icons">
                     <!-- <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a> -->
-                    <a href="https://www.linkedin.com/company/hashxpert-technologies-llc/?originalSubdomain=ae"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/hashxpert-technologies-llc/?originalSubdomain=ae"><i
+                            class="fab fa-linkedin"></i></a>
                     <!-- <a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a> -->
                 </div>
@@ -769,24 +772,24 @@
     <button id="scrollUpBtn" title="Scroll to Top">↑</button>
 
 
-<script>
-    
+    <script>
 
-    // Scroll Up Button Functionality
-    var scrollUpBtn = document.getElementById("scrollUpBtn");
 
-    window.onscroll = function () {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            scrollUpBtn.style.display = "block";
-        } else {
-            scrollUpBtn.style.display = "none";
-        }
-    };
+        // Scroll Up Button Functionality
+        var scrollUpBtn = document.getElementById("scrollUpBtn");
 
-    scrollUpBtn.addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-</script>
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        };
+
+        scrollUpBtn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
