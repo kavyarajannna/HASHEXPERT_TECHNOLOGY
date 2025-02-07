@@ -980,14 +980,35 @@
     }
 
     .section-03-image {
-        max-width: 430px;
-        /* Fixed width for image */
-        height: 400px;
-        /* Fixed height for image */
-        /* border-radius: 8px; */
-        padding-top: 5%;
-        /* 5% top padding */
+    width: 100%;
+    /* Make it responsive to the container */
+    max-width: 40%;
+    /* Limits width to 40% of the parent container */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensures image fills the box without distortion */
+    display: block;
+    /* Prevents extra spacing issues */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .section-03-image {
+        max-width: 50%;
+        /* Adjusts width for tablets */
+        height: auto;
     }
+}
+
+@media (max-width: 768px) {
+    .section-03-image {
+        max-width: 100%;
+        /* Full width for smaller screens */
+        height: auto;
+    }
+}
+
 
     /* Blue link with arrow hover effect */
     .section-03-link {
@@ -1025,11 +1046,7 @@
             text-align: justify;
         }
 
-        .section-03-image {
-            max-width: 100%;
-            margin-top: 2rem;
-            /* Give some spacing on top */
-        }
+       
     }
 
 
