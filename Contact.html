@@ -667,22 +667,20 @@
     </header>
     <!-- Contact Us Section -->
     <section class="contact-us">
-        <div class="contact-container">
-            <!-- First Column (Contact Form) -->
-            <div class="contact-form">
+             <!-- First Column (Contact Form) -->
+             <div class="contact-form">
                 <h2>Contact Us</h2>
-                <form id="contactForm" action="https://api.whatsapp.com/send?phone=+19945000068&text=" method="get"
-                    target="_blank">
+                <form id="contactForm">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
-
+    
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-
+    
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit" class="custom-button">Send</button>
+    
+                    <button type="button" onclick="sendMessage()" class="custom-button">Send</button>
                 </form>
             </div>
 
@@ -831,7 +829,19 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
+<script>
+    function sendMessage() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
 
+        const phoneNumber = '+9199450 00068'; // Your WhatsApp number
+        const text = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`; // %0A is for new line
+
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}`;
+        window.open(url, '_blank');
+    }
+</script>
     <script src="script.js"></script>
 </body>
 
